@@ -11,13 +11,13 @@ const page: FC<pageProps> = ({}) => {
 
         <p>
           {" "}
-          Bindi Buzz (\"we,\" \"our,\" or \"us\") is committed to protecting
-          your privacy. This Privacy Policy explains how your personal
-          information is collected, used, and disclosed by Bindi Buzz.
+          Bindi Buzz ("we," "our," or "us") is committed to protecting your
+          privacy. This Privacy Policy explains how your personal information is
+          collected, used, and disclosed by Bindi Buzz.
         </p>
         <p>
           This Privacy Policy applies to our website, and its associated
-          subdomains (collectively, our \"Service\") alongside our application,
+          subdomains (collectively, our "Service") alongside our application,
           Bindi Buzz. By accessing or using our Service, you signify that you
           have read, understood, and agree to our collection, storage, use, and
           disclosure of your personal information as described in this Privacy
@@ -40,8 +40,8 @@ const page: FC<pageProps> = ({}) => {
               preference or login information.
             </li>
             <li>
-              Company: when this policy mentions \"Company,\" \"we,\" \"us,\" or
-              \"our,\" it refers to Bindi Buzz, that is responsible for your
+              Company: when this policy mentions "Company," "we," "us," or
+              "our," it refers to Bindi Buzz, that is responsible for your
               information under this Privacy Policy.
             </li>
             <li>
@@ -86,7 +86,7 @@ const page: FC<pageProps> = ({}) => {
               content or whose products or services we think may interest you.
             </li>
             <li>
-              Website: Bindi Buzz\'s site, which can be accessed via this URL:
+              Website: Bindi Buzz's site, which can be accessed via this URL:
               bindibuzz.com
             </li>
             <li>
@@ -246,7 +246,7 @@ const page: FC<pageProps> = ({}) => {
           carries out services on our behalf. When we no longer need to use your
           information and there is no need for us to keep it to comply with our
           legal or regulatory obligations, we’ll either remove it from our
-          systems or depersonalize it so that we can\'t identify you.
+          systems or depersonalize it so that we can't identify you.
         </p>
 
         <h1>How Do We Protect Your Information?</h1>
@@ -390,9 +390,9 @@ const page: FC<pageProps> = ({}) => {
 
         <h1>Your Consent</h1>
         <p>
-          We\'ve updated our Privacy Policy to provide you with complete
+          We've updated our Privacy Policy to provide you with complete
           transparency into what is being set when you visit our site and how
-          it\'s being used. By using our website, registering an account, or
+          it's being used. By using our website, registering an account, or
           making a purchase, you hereby consent to our Privacy Policy and agree
           to its terms.
         </p>
@@ -429,19 +429,19 @@ const page: FC<pageProps> = ({}) => {
 
         <h1>Blocking and disabling cookies and similar technologies</h1>
         <p>
-          Wherever you\'re located you may also set your browser to block
-          cookies and similar technologies, but this action may block our
-          essential cookies and prevent our website from functioning properly,
-          and you may not be able to fully utilize all of its features and
-          services. You should also be aware that you may also lose some saved
-          information (e.g. saved login details, site preferences) if you block
-          cookies on your browser. Different browsers make different controls
-          available to you. Disabling a cookie or category of cookie does not
-          delete the cookie from your browser, you will need to do this yourself
-          from within your browser, you should visit your browser\'s help menu
-          for more information.
+          Wherever you're located you may also set your browser to block cookies
+          and similar technologies, but this action may block our essential
+          cookies and prevent our website from functioning properly, and you may
+          not be able to fully utilize all of its features and services. You
+          should also be aware that you may also lose some saved information
+          (e.g. saved login details, site preferences) if you block cookies on
+          your browser. Different browsers make different controls available to
+          you. Disabling a cookie or category of cookie does not delete the
+          cookie from your browser, you will need to do this yourself from
+          within your browser, you should visit your browser's help menu for
+          more information.
         </p>
-        <h1>Kids\' Privacy</h1>
+        <h1>Kids' Privacy</h1>
         <p>
           We do not address anyone under the age of 13. We do not knowingly
           collect personally identifiable information from anyone under the age
@@ -481,7 +481,7 @@ const page: FC<pageProps> = ({}) => {
         <p>
           Third-Party Services and links thereto are provided solely as a
           convenience to you and you access and use them entirely at your own
-          risk and subject to such third parties\' terms and conditions.
+          risk and subject to such third parties' terms and conditions.
         </p>
         <ul></ul>
         <h1>Information about General Data Protection Regulation (GDPR)</h1>
@@ -496,7 +496,7 @@ const page: FC<pageProps> = ({}) => {
         <h1>What is GDPR?</h1>
         <p>
           GDPR is an EU-wide privacy and data protection law that regulates how
-          EU residents\' data is protected by companies and enhances the
+          EU residents' data is protected by companies and enhances the
           control the EU residents have, over their personal data.
         </p>
         <p>
@@ -544,9 +544,9 @@ const page: FC<pageProps> = ({}) => {
         <h1>Why is GDPR important?</h1>
         <p>
           GDPR adds some new requirements regarding how companies should protect
-          individuals\' personal data that they collect and process. It also
+          individuals' personal data that they collect and process. It also
           raises the stakes for compliance by increasing enforcement and
-          imposing greater fines for breach. Beyond these facts it\'s simply the
+          imposing greater fines for breach. Beyond these facts it's simply the
           right thing to do. At Bindi Buzz we strongly believe that your data
           privacy is very important and we already have solid security and
           privacy practices in place that go beyond the requirements of this new
@@ -554,7 +554,7 @@ const page: FC<pageProps> = ({}) => {
         </p>
 
         <h1>
-          Individual Data Subject\'s Rights - Data Access, Portability and
+          Individual Data Subject's Rights - Data Access, Portability and
           Deletion
         </h1>
         <p>
@@ -569,7 +569,7 @@ const page: FC<pageProps> = ({}) => {
         <p>
           We are aware that if you are working with EU customers, you need to be
           able to provide them with the ability to access, update, retrieve and
-          remove personal data. We got you! We\'ve been set up as self service
+          remove personal data. We got you! We've been set up as self service
           from the start and have always given you access to your data and your
           customers data. Our customer support team is here for you to answer
           any questions you might have about working with the API.
@@ -606,8 +606,8 @@ const page: FC<pageProps> = ({}) => {
             have collected.
           </li>
           <li>
-            Request that a business that sells a consumer\'s personal data, not
-            sell the consumer\'s personal data.
+            Request that a business that sells a consumer's personal data, not
+            sell the consumer's personal data.
           </li>
         </ul>
         <p>
@@ -643,8 +643,8 @@ const page: FC<pageProps> = ({}) => {
             have collected.
           </li>
           <li>
-            Right to request that a business that sells a consumer\'s personal
-            data, not sell the consumer\'s personal data.
+            Right to request that a business that sells a consumer's personal
+            data, not sell the consumer's personal data.
           </li>
         </ul>
         <p>
@@ -654,7 +654,7 @@ const page: FC<pageProps> = ({}) => {
         <p>We do not sell the Personal Information of our users.</p>
         <p>For more information about these rights, please contact us.</p>
         <h1>Contact Us</h1>
-        <p>Don\'t hesitate to contact us if you have any questions.</p>
+        <p>Don't hesitate to contact us if you have any questions.</p>
         <ul>
           <li>
             Via Email:{" "}
