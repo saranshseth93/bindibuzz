@@ -5,7 +5,6 @@ import { FC, useState } from "react";
 import { signIn } from "next-auth/react";
 import { toast } from "react-hot-toast";
 
-import Image from "next/image";
 import Logo from "@/components/ui/Logo";
 
 const Page: FC = () => {
@@ -14,7 +13,7 @@ const Page: FC = () => {
   async function loginWithGoogle() {
     setIsLoading(true);
     try {
-      await signIn("google");
+      await signIn("google", { callbackUrl: "/dashboard" });
     } catch (error) {
       // display error message to user
       toast.error("Something went wrong with your login.");
