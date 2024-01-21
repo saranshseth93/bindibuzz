@@ -11,13 +11,13 @@ const page: FC<pageProps> = ({}) => {
 
         <p>
           {" "}
-          Bindi Buzz (“we,” “our,” or “us”) is committed to protecting your
+          Bindi Buzz ("we," "our," or "us") is committed to protecting your
           privacy. This Privacy Policy explains how your personal information is
           collected, used, and disclosed by Bindi Buzz.
         </p>
         <p>
           This Privacy Policy applies to our website, and its associated
-          subdomains (collectively, our “Service”) alongside our application,
+          subdomains (collectively, our "Service") alongside our application,
           Bindi Buzz. By accessing or using our Service, you signify that you
           have read, understood, and agree to our collection, storage, use, and
           disclosure of your personal information as described in this Privacy
@@ -40,8 +40,8 @@ const page: FC<pageProps> = ({}) => {
               preference or login information.
             </li>
             <li>
-              Company: when this policy mentions “Company,” “we,” “us,” or
-              “our,” it refers to Bindi Buzz, that is responsible for your
+              Company: when this policy mentions "Company," "we," "us," or
+              "our," it refers to Bindi Buzz, that is responsible for your
               information under this Privacy Policy.
             </li>
             <li>
