@@ -9,12 +9,12 @@
     url("../../public/Fonts/Gengboy.woff") format("woff");
 }
 
-/* body {
+body {
   background: url("../../public/Images/pattern.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-} */
+}
 
 @layer base {
   container {
