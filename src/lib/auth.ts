@@ -40,6 +40,8 @@ export const authOptions: NextAuthOptions = {
         | string
         | null
 
+        console.log('dbUserResult', dbUserResult)
+
       if (!dbUserResult) {
         if (user) {
           token.id = user!.id
@@ -49,6 +51,7 @@ export const authOptions: NextAuthOptions = {
       }
 
       const dbUser = JSON.parse(dbUserResult) as User
+      console.log('dbUser', dbUser)
 
       return {
         id: dbUser.id,
@@ -64,10 +67,12 @@ export const authOptions: NextAuthOptions = {
         session.user.email = token.email
         session.user.image = token.picture
       }
+      console.log('session', session)
 
       return session
     },
     redirect() {
+      console.log('redirect');
       return '/dashboard'
     },
   },
