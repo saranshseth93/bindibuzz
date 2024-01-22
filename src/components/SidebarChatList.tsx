@@ -32,12 +32,20 @@ const SidebarChatList: FC<SidebarChatListProps> = ({ friends, sessionId }) => {
       setActiveChats((prev) => [...prev, newFriend]);
     };
 
+    const playNotificationSound = () => {
+      const audio = new Audio("../../public/Sounds/new-message.wav"); // Replace with the path to your audio file
+      audio.play().catch((e) => console.error("Failed to play audio:", e));
+    };
+
     const chatHandler = (message: ExtendedMessage) => {
       const shouldNotify =
         pathname !==
         `/dashboard/chat/${chatHrefConstructor(sessionId, message.senderId)}`;
 
       if (!shouldNotify) return;
+
+      playNotificationSound();
+      vibrate({ duration: 200, interval: 150, count: 3 });
 
       // should be notified
       toast.custom((t) => (
@@ -51,7 +59,6 @@ const SidebarChatList: FC<SidebarChatListProps> = ({ friends, sessionId }) => {
         />
       ));
 
-      vibrate({ duration: 200, interval: 150, count: 3 });
       setUnseenMessages((prev) => [...prev, message]);
     };
 
