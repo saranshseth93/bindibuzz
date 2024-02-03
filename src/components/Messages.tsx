@@ -6,6 +6,7 @@ import { Message } from "@/lib/validations/message";
 import { format } from "date-fns";
 import Image from "next/image";
 import { FC, useEffect, useRef, useState } from "react";
+import robot from "../../public/Images/robot.svg";
 
 interface MessagesProps {
   initialMessages: Message[];
@@ -25,7 +26,7 @@ const Messages: FC<MessagesProps> = ({
   const [messages, setMessages] = useState<Message[]>(initialMessages);
 
   const playNotificationSound = () => {
-    const audio = new Audio("../../public/Sounds/new-message.wav"); // Replace with the path to your audio file
+    const audio = new Audio("/Sounds/new-message.mp3");
     audio.play().catch((e) => console.error("Failed to play audio:", e));
   };
 
@@ -49,7 +50,9 @@ const Messages: FC<MessagesProps> = ({
   const scrollDownRef = useRef<HTMLDivElement | null>(null);
 
   const formatTimestamp = (timestamp: number) => {
-    return format(timestamp, "HH:mm");
+    // Ensure the timestamp is a number. If it's not, convert it.
+    const date = new Date(+timestamp);
+    return format(date, "HH:mm");
   };
 
   return (
@@ -111,11 +114,17 @@ const Messages: FC<MessagesProps> = ({
                 <Image
                   fill
                   src={
-                    isCurrentUser ? (sessionImg as string) : chatPartner.image
+                    isCurrentUser
+                      ? (sessionImg as string)
+                      : chatPartner.id === "assistant"
+                      ? robot
+                      : chatPartner.image
                   }
                   alt="Profile picture"
                   referrerPolicy="no-referrer"
-                  className="rounded-full"
+                  className={
+                    chatPartner.id === "assistant" ? "" : `rounded-full`
+                  }
                 />
               </div>
             </div>

@@ -5,6 +5,7 @@ import { authOptions } from "@/lib/auth";
 import { messageArrayValidator } from "@/lib/validations/message";
 import { getServerSession } from "next-auth";
 import Image from "next/image";
+import assistant from "../../../../../../public/Images/assistant.png";
 import { notFound } from "next/navigation";
 
 // The following generateMetadata functiion was written after the video and is purely optional
@@ -23,9 +24,19 @@ export async function generateMetadata({
     "get",
     `user:${chatPartnerId}`
   )) as string;
-  const chatPartner = JSON.parse(chatPartnerRaw) as User;
+  let chatPartner = JSON.parse(chatPartnerRaw) as User;
 
-  return { title: `Bindi Buzz | ${chatPartner.name} chat` };
+  if (chatPartnerId === "assistant") {
+    chatPartner = {
+      id: "assistant",
+      name: "Personal Assistant",
+      image: assistant,
+      email: "",
+    };
+    return { title: `Bindi Buzz | Personal Assistant` };
+  }
+
+  return { title: `Bindi Buzz | ${chatPartner?.name} chat` };
 }
 
 interface PageProps {
@@ -75,7 +86,15 @@ const page = async ({ params }: PageProps) => {
     "get",
     `user:${chatPartnerId}`
   )) as string;
-  const chatPartner = JSON.parse(chatPartnerRaw) as User;
+  let chatPartner = JSON.parse(chatPartnerRaw) as User;
+  if (chatPartnerId === "assistant") {
+    chatPartner = {
+      id: "assistant",
+      name: "Personal Assistant",
+      image: assistant,
+      email: "",
+    };
+  }
   const initialMessages = await getChatMessages(chatId);
 
   return (
@@ -83,7 +102,13 @@ const page = async ({ params }: PageProps) => {
       <div className="flex sm:items-center justify-between py-3 border-b-2 border-gray-200">
         <div className="relative flex items-center space-x-4">
           <div className="relative">
-            <div className="relative w-8 sm:w-12 h-8 sm:h-12">
+            <div
+              className={`relative ${
+                chatPartnerId === "assistant"
+                  ? "w-12 h-8 auto"
+                  : "w-8 sm:w-12 h-8 sm:h-12"
+              }`}
+            >
               <Image
                 fill
                 referrerPolicy="no-referrer"
