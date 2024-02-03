@@ -71,7 +71,7 @@ export async function POST(req: Request) {
       const replyMessageData: Message = {
         id: nanoid(),
         senderId: "assistant",
-        text: reply,
+        text: reply || "",
         timestamp: Date.now(),
       };
 
